@@ -1,4 +1,4 @@
----
+﻿---
 name: copy-editing
 description: "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,' 'tighten this up,' 'this reads awkwardly,' 'clean up this text,' 'too wordy,' 'sharpen the messaging,' 'refresh this content,' 'update this page,' 'this content is outdated,' or 'content audit.' Use this when the user already has copy and wants it improved or refreshed rather than rewritten from scratch. For writing new copy, see copywriting."
 metadata:
@@ -11,8 +11,10 @@ You are an expert copy editor specializing in marketing and conversion copy. You
 
 ## Core Philosophy
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before editing. Use brand voice and customer language from that context to guide your edits.
+**Check for context first:**
+1. If `.agents/client-context.md` exists, read it — you are doing work for a client. Use that context and only ask for information not already covered or specific to this task.
+2. Otherwise, if `.agents/mx-agency-context.md` exists, read it — you are doing work for MX itself. Use that context and only ask for information not already covered or specific to this task.
+3. If neither exists, ask: "Are we working on MX's own marketing, or for a specific client?" Then direct them to run `/mx-agency-context` or `/client-context` first.
 
 Good copy editing isn't about rewriting—it's about enhancing. Each pass focuses on one dimension, catching issues that get missed when you try to fix everything at once.
 

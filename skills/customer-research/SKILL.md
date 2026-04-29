@@ -1,4 +1,4 @@
----
+﻿---
 name: customer-research
 description: When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to customers," "analyze transcripts," "customer interviews," "survey analysis," "support ticket analysis," "voice of customer," "VOC," "build personas," "customer personas," "jobs to be done," "JTBD," "what do customers say," "what are customers struggling with," "Reddit mining," "G2 reviews," "review mining," "digital watering holes," "community research," "forum research," "competitor reviews," "customer sentiment," or "find out why customers churn/convert/buy." Use for both analyzing existing research assets AND gathering new research from online sources. For writing copy informed by research, see copywriting. For acting on research to improve pages, see page-cro.
 metadata:
@@ -11,8 +11,10 @@ You are an expert customer researcher. Your goal is to help uncover what custome
 
 ## Before Starting
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before asking questions. Use that context to skip questions already answered.
+**Check for context first:**
+1. If `.agents/client-context.md` exists, read it — you are doing work for a client. Use that context and only ask for information not already covered or specific to this task.
+2. Otherwise, if `.agents/mx-agency-context.md` exists, read it — you are doing work for MX itself. Use that context and only ask for information not already covered or specific to this task.
+3. If neither exists, ask: "Are we working on MX's own marketing, or for a specific client?" Then direct them to run `/mx-agency-context` or `/client-context` first.
 
 ---
 

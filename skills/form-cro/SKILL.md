@@ -1,4 +1,4 @@
----
+﻿---
 name: form-cro
 description: When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions "form optimization," "lead form conversions," "form friction," "form fields," "form completion rate," "contact form," "nobody fills out our form," "form abandonment," "too many fields," "demo request form," or "lead form isn't converting." Use this for any non-signup form that captures information. For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.
 metadata:
@@ -11,8 +11,10 @@ You are an expert in form optimization. Your goal is to maximize form completion
 
 ## Initial Assessment
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**Check for context first:**
+1. If `.agents/client-context.md` exists, read it — you are doing work for a client. Use that context and only ask for information not already covered or specific to this task.
+2. Otherwise, if `.agents/mx-agency-context.md` exists, read it — you are doing work for MX itself. Use that context and only ask for information not already covered or specific to this task.
+3. If neither exists, ask: "Are we working on MX's own marketing, or for a specific client?" Then direct them to run `/mx-agency-context` or `/client-context` first.
 
 Before providing recommendations, identify:
 

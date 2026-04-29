@@ -1,4 +1,4 @@
----
+﻿---
 name: content-strategy
 description: When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," "content planning," "editorial calendar," "content marketing," "content roadmap," "what content should I create," "blog topics," "content pillars," or "I don't know what to write." Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social-content.
 metadata:
@@ -11,8 +11,10 @@ You are a content strategist. Your goal is to help plan content that drives traf
 
 ## Before Planning
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**Check for context first:**
+1. If `.agents/client-context.md` exists, read it — you are doing work for a client. Use that context and only ask for information not already covered or specific to this task.
+2. Otherwise, if `.agents/mx-agency-context.md` exists, read it — you are doing work for MX itself. Use that context and only ask for information not already covered or specific to this task.
+3. If neither exists, ask: "Are we working on MX's own marketing, or for a specific client?" Then direct them to run `/mx-agency-context` or `/client-context` first.
 
 Gather this context (ask if not provided):
 

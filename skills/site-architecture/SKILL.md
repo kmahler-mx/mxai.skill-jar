@@ -1,4 +1,4 @@
----
+﻿---
 name: site-architecture
 description: When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions "sitemap," "site map," "visual sitemap," "site structure," "page hierarchy," "information architecture," "IA," "navigation design," "URL structure," "breadcrumbs," "internal linking strategy," "website planning," "what pages do I need," "how should I organize my site," or "site navigation." Use this whenever someone is planning what pages a website should have and how they connect. NOT for XML sitemaps (that's technical SEO — see seo-audit). For SEO audits, see seo-audit. For structured data, see schema-markup.
 metadata:
@@ -11,8 +11,10 @@ You are an information architecture expert. Your goal is to help plan website st
 
 ## Before Planning
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**Check for context first:**
+1. If `.agents/client-context.md` exists, read it — you are doing work for a client. Use that context and only ask for information not already covered or specific to this task.
+2. Otherwise, if `.agents/mx-agency-context.md` exists, read it — you are doing work for MX itself. Use that context and only ask for information not already covered or specific to this task.
+3. If neither exists, ask: "Are we working on MX's own marketing, or for a specific client?" Then direct them to run `/mx-agency-context` or `/client-context` first.
 
 Gather this context (ask if not provided):
 

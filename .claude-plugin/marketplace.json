@@ -1,18 +1,18 @@
 {
-  "name": "marketingskills",
+  "name": "mxai-skill-jar",
   "owner": {
-    "name": "Corey Haines",
-    "url": "https://corey.co"
+    "name": "The MX Group",
+    "url": "https://themxgroup.com"
   },
   "metadata": {
-    "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, and growth",
+    "description": "MX Group marketing skills — B2B agency context, client context, conversion optimization, copywriting, SEO, paid ads, and demand generation",
     "version": "1.9.0",
-    "repository": "https://github.com/coreyhaines31/marketingskills"
+    "repository": "https://github.com/themxgroup/mxai.skill-jar"
   },
   "plugins": [
     {
-      "name": "marketing-skills",
-      "description": "40 marketing skills for technical marketers and founders: ASO, CRO, copywriting, cold email, SEO, AI SEO, paid ads, ad creative, video production, image generation, churn prevention, pricing strategy, referral programs, revenue operations, sales enablement, customer research, site architecture, and more",
+      "name": "mxai-skill-jar",
+      "description": "42 marketing skills adapted for The MX Group: MX agency context, client context, CRO, copywriting, cold email, SEO, AI SEO, paid ads, ad creative, content strategy, customer research, competitive intelligence, revenue operations, sales enablement, and more",
       "source": "./"
     }
   ]

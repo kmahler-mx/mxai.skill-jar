@@ -1,12 +1,12 @@
 {
-  "name": "marketing-skills",
-  "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
+  "name": "mxai-skill-jar",
+  "description": "Marketing skills for The MX Group — B2B agency context, client context, conversion optimization, copywriting, SEO, paid ads, and demand generation",
   "version": "1.9.0",
   "author": {
-    "name": "Corey Haines"
+    "name": "The MX Group"
   },
-  "homepage": "https://github.com/coreyhaines31/marketingskills",
-  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "homepage": "https://github.com/themxgroup/mxai.skill-jar",
+  "repository": "https://github.com/themxgroup/mxai.skill-jar",
   "license": "MIT",
   "skills": "./skills"
 }
