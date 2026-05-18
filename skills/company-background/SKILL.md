@@ -6,6 +6,9 @@ description: >
   skill whenever someone asks to "run a company background", "pull a background
   on [company]", "research a prospect", "build a prospect profile", or "create
   a company overview doc". 
+metadata:
+  version: 1.0.0
+  author: Kyle Mahler
 ---
 
 # Company Background Skill
