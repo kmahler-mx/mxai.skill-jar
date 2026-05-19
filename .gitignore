@@ -26,3 +26,6 @@ node_modules/
 
 # zipped skills
 *.zip
+
+# Kyle's tests
+tests/
